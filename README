@@ -1,0 +1,91 @@
+gst-inspector
+------------------------------------------
+GStreamer Inspector is an introspection data viewer for the GStreamer 
+multimedia framework. Developers of GStreamer applications can use it to 
+find out about the various elements available in the system. It can be 
+thought of as a graphical variant of the gst-inspect program, which 
+currently serves as the canonical source of introspection information 
+for many developers.
+
+Runtime requirements:
+  python-2.5.4-10
+  python-gobject2-2.16.1-10
+  python-gst0.10-0.10.15-1
+  python-gtk2-2.14.1-1
+
+Build requirements:
+  cygport-0.9.7-1
+  gettext-devel-0.17-11
+  intltool-0.40.6-1
+  python-2.5.4-10
+
+Canonical website:
+  http://renestadler.de/projects/gst-inspector/
+
+Canonical download:
+  http://renestadler.de/files/gst-inspector/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gst-inspector-0.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gst-inspector-0.4-X.cygport all
+
+This will create:
+  /usr/src/gst-inspector-0.4-X-src.tar.bz2
+  /usr/src/gst-inspector-0.4-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/gst-inspector.sh
+  /usr/bin/gst-inspector
+  /usr/lib/python2.5/site-packages/GstInspector/Data.py
+  /usr/lib/python2.5/site-packages/GstInspector/Data.pyc
+  /usr/lib/python2.5/site-packages/GstInspector/Data.pyo
+  /usr/lib/python2.5/site-packages/GstInspector/GUI.py
+  /usr/lib/python2.5/site-packages/GstInspector/GUI.pyc
+  /usr/lib/python2.5/site-packages/GstInspector/GUI.pyo
+  /usr/lib/python2.5/site-packages/GstInspector/__init__.py
+  /usr/lib/python2.5/site-packages/GstInspector/__init__.pyc
+  /usr/lib/python2.5/site-packages/GstInspector/__init__.pyo
+  /usr/lib/python2.5/site-packages/GstInspector/main.py
+  /usr/lib/python2.5/site-packages/GstInspector/main.pyc
+  /usr/lib/python2.5/site-packages/GstInspector/main.pyo
+  /usr/lib/python2.5/site-packages/GstInspector/utils.py
+  /usr/lib/python2.5/site-packages/GstInspector/utils.pyc
+  /usr/lib/python2.5/site-packages/GstInspector/utils.pyo
+  /usr/lib/python2.5/site-packages/gst_inspector-0.4-py2.5.egg-info
+  /usr/share/applications/gst-inspector.desktop
+  /usr/share/doc/gst-inspector/AUTHORS
+  /usr/share/doc/gst-inspector/COPYING
+  /usr/share/doc/gst-inspector/NEWS
+  /usr/share/doc/gst-inspector/README
+  /usr/share/doc/gst-inspector/TODO
+  /usr/share/gst-inspector/gst-inspector.glade
+  /usr/share/gst-inspector/gst-inspector.ui
+  /usr/share/icons/hicolor/16x16/apps/gst-inspector.png
+  /usr/share/icons/hicolor/16x16/apps/gst-inspector.svg
+  /usr/share/icons/hicolor/22x22/apps/gst-inspector.png
+  /usr/share/icons/hicolor/22x22/apps/gst-inspector.svg
+  /usr/share/icons/hicolor/24x24/apps/gst-inspector.png
+  /usr/share/icons/hicolor/32x32/apps/gst-inspector.png
+  /usr/share/icons/hicolor/32x32/apps/gst-inspector.svg
+  /usr/share/icons/hicolor/48x48/apps/gst-inspector.png
+  /usr/share/icons/hicolor/scalable/apps/gst-inspector.svg
+  /usr/share/locale/de/LC_MESSAGES/gst-inspector.mo
+
+------------------
+
+Port Notes:
+
+----- version 0.4-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

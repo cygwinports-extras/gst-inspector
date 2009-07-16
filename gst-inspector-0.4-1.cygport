@@ -1,0 +1,7 @@
+inherit distutils
+
+DESCRIPTION="GStreamer plugin introspection GUI tool"
+HOMEPAGE="http://renestadler.de/projects/gst-inspector/"
+SRC_URI="http://renestadler.de/files/gst-inspector/${P}.tar.gz"
+
+DIFF_EXCLUDES="*.po"

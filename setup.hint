@@ -1,0 +1,9 @@
+category: Audio Video
+requires: python python-gobject2 python-gst0.10 python-gtk2
+sdesc: "GStreamer plugin info GUI"
+ldesc: "GStreamer Inspector is an introspection data viewer for the 
+GStreamer multimedia framework. Developers of GStreamer applications can 
+use it to find out about the various elements available in the system. 
+It can be thought of as a graphical variant of the gst-inspect program, 
+which currently serves as the canonical source of introspection 
+information for many developers."
