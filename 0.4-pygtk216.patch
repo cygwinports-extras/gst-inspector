@@ -1,0 +1,14 @@
+Not sure if pygtk-2.16 or pygobject-2.20 broke this, but this seems
+to work instead.
+
+--- origsrc/gst-inspector-0.4/GstInspector/GUI.py	2008-11-07 14:12:27.000000000 -0600
++++ src/gst-inspector-0.4/GstInspector/GUI.py	2009-11-03 01:03:21.807773100 -0600
+@@ -1297,7 +1297,7 @@ class DetailsPage (Page):
+         # (border) is drawn there on mouse over only, so it looks totally odd
+         # without this little adjustment.
+         button_req_width = self.link_button.size_request ()[0]
+-        child_req_width = self.link_button.child.size_request ()[0]
++        child_req_width = label.size_request ()[0]
+         extra_pad = (button_req_width - child_req_width) / 2
+         children = [label]
+         children += iter_container (self.widgets.element_details_table,
